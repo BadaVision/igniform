@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html class="dark" lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>IGNIFORM | Nowoczesny Standard Systemów PPOŻ</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Manrope:wght@400;500;700&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed-dim": "#c6c6c7",
+            "primary": "#ffb4a8",
+            "surface-dim": "#131313",
+            "on-tertiary": "#2f3131",
+            "surface-container-low": "#1b1b1b",
+            "primary-fixed": "#ffdad4",
+            "on-surface-variant": "#e5bdb7",
+            "primary-fixed-dim": "#ffb4a8",
+            "on-secondary-fixed": "#1c1b1b",
+            "secondary-container": "#474746",
+            "tertiary-container": "#535556",
+            "outline-variant": "#5c403b",
+            "on-surface": "#e2e2e2",
+            "on-background": "#e2e2e2",
+            "surface-container-high": "#2a2a2a",
+            "on-tertiary-fixed": "#1a1c1c",
+            "on-primary-fixed": "#410000",
+            "on-secondary-fixed-variant": "#474746",
+            "surface-tint": "#ffb4a8",
+            "tertiary": "#c6c6c7",
+            "on-secondary-container": "#b7b5b4",
+            "surface-bright": "#393939",
+            "error-container": "#93000a",
+            "inverse-primary": "#bd1209",
+            "on-secondary": "#313030",
+            "surface-container": "#1f1f1f",
+            "on-tertiary-fixed-variant": "#454747",
+            "background": "#111111",
+            "primary-container": "#af0000",
+            "outline": "#ac8883",
+            "surface": "#111111",
+            "on-primary-container": "#ffb9ae",
+            "surface-container-highest": "#353535",
+            "secondary-fixed-dim": "#c8c6c5",
+            "tertiary-fixed": "#e2e2e2",
+            "error": "#ffb4ab",
+            "on-primary-fixed-variant": "#930000",
+            "on-tertiary-container": "#c9caca",
+            "surface-container-lowest": "#0e0e0e",
+            "on-error": "#690005",
+            "inverse-on-surface": "#303030",
+            "secondary": "#c8c6c5",
+            "secondary-fixed": "#e5e2e1",
+            "on-error-container": "#ffdad6",
+            "surface-variant": "#353535",
+            "on-primary": "#690000",
+            "inverse-surface": "#e2e2e2"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .tonal-transition {
+      background: linear-gradient(to bottom, rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0));
+    }
+
+    .seam-shadow {
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body class="bg-[#111111] text-on-background font-body selection:bg-primary-container selection:text-white">
+  <!-- Top Navigation Shell -->
+  <nav class="fixed top-0 w-full z-50 bg-transparent">
+    <div class="flex justify-between items-center px-12 py-8 w-full max-w-7xl mx-auto relative">
+      <span class="text-2xl font-black tracking-tighter text-white uppercase font-headline shrink-0"
+        style="">IGNIFORM</span>
+      <div class="absolute left-1/2 -translate-x-1/2">
+        <div class="hidden md:flex gap-8 items-center px-8 py-3 rounded-full"
+          style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
+          <a class="text-white/70 font-bold font-headline tracking-tight hover:text-white transition-colors duration-300 text-sm"
+            href="#" style="">Produkty</a>
+          <a class="text-white/70 font-bold font-headline tracking-tight hover:text-white transition-colors duration-300 text-sm"
+            href="#" style="">O nas</a>
+          <a class="text-white/70 font-bold font-headline tracking-tight hover:text-white transition-colors duration-300 text-sm"
+            href="#" style="">Kontakt</a>
+        </div>
+      </div>
+      <div class="w-[100px] md:block hidden"></div>
+    </div>
+  </nav>
+  <!-- Hero Section: The Monolith -->
+  <section class="relative bg-[#111111] rounded-b-xl z-40 overflow-hidden pt-48 pb-24">
+    <div class="container mx-auto px-12 relative z-10 grid md:grid-cols-2 gap-12 items-stretch">
+      <div class="flex flex-col justify-between py-2">
+        <div>
+          <h1
+            class="font-headline font-extrabold leading-[1.1] tracking-tighter text-white mb-8 text-[54px] lg:text-[72px] drop-shadow-2xl"
+            style="">
+            Nowoczesny Standard Systemów <span class="text-primary-container" style="">PPOŻ</span>
+          </h1>
+          <p class="text-zinc-100 text-[18px] lg:text-[19px] max-w-xl mb-12 leading-relaxed drop-shadow-md font-medium"
+            style="">
+            Rozwiązania przeciwpożarowe nowej generacji, które stają się elementem designu. Ultralekkie i mobilne dzięki
+            składanej konstrukcji.
+          </p>
+        </div>
+        <div class="flex gap-6">
+          <button
+            class="bg-primary-container text-white px-12 py-5 rounded-full font-extrabold uppercase tracking-widest text-sm hover:brightness-110 transition-all flex items-center gap-4 shadow-xl shadow-black/40"
+            style="">
+            Zapytaj o ofertę hurtową
+            <span class="material-symbols-outlined" style="">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+      <div class="relative group md:block block">
+        <div class="bg-transparent p-0" style="border-radius: 24px; overflow: hidden;">
+          <img alt="Industrial fire extinguisher stand"
+            class="w-full max-w-lg ml-auto rounded-lg object-contain relative z-20 rounded-[24px]"
+            src="https://lh3.googleusercontent.com/aida/ADBb0ui5YftHOuPfXRmvarGgx1oPboZAL9-VhFtm2yTC6s3qxvYPCO66roeqM-TamEMC49VhTf39D48hlLdUe5UUFkybBJub3oYjsaWuK8P_AWFRbuUq57srIe49p7XscFDyom6D4o-xloJzk7WFVntD3V0h2QE-N-tiooL_iCvdEdVghbQK7670A3bW3pFk91c3S8DpvGrY1PVrNM1jU6n54rUgu1zna4eOAUIqMqHKbHdoVAIxLTMazOFJmPzj5RaWqpnJkoEFyYmlfA"
+            style="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Trust Points Section: Overlapping Card -->
+  <section class="relative pt-24 pb-32 bg-[#111111] rounded-b-xl z-30 px-12 md:px-24">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+      <div class="flex flex-col gap-4 text-center items-center flex-1">
+        <span class="text-5xl font-headline font-black text-white" style="">25 LAT</span>
+        <p class="text-zinc-500 uppercase tracking-widest text-[0.7rem] font-bold font-label" style="">Doświadczenia w
+          branży metalowej</p>
+      </div>
+      <div class="hidden md:block w-[3px] h-16 bg-primary-container shrink-0"></div>
+      <div class="flex flex-col gap-4 text-center items-center flex-1">
+        <span class="text-5xl font-headline font-black text-white" style="">EXPORT DE</span>
+        <p class="text-zinc-500 uppercase tracking-widest text-[0.7rem] font-bold font-label" style="">Zaufanie na rynku
+          niemieckim</p>
+      </div>
+      <div class="hidden md:block w-[3px] h-16 bg-primary-container shrink-0"></div>
+      <div class="flex flex-col gap-4 text-center items-center flex-1">
+        <span class="text-5xl font-headline font-black text-white" style="">100% PL</span>
+        <p class="text-zinc-500 uppercase tracking-widest text-[0.7rem] font-bold font-label" style="">Polska produkcja
+          i design</p>
+      </div>
+    </div>
+  </section>
+  <!-- Product Grid: Overlapping Card (Ghost White Background) -->
+  <section class="relative -mt-12 bg-zinc-50 text-background rounded-b-xl z-20 px-12"
+    style="padding-top: 120px; padding-bottom: 80px;">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-end mb-20">
+        <div>
+          <h2 class="font-headline font-bold text-5xl tracking-normal uppercase mb-4"
+            style="font-family: 'Plus Jakarta Sans', sans-serif !important; letter-spacing: 0px !important;">SYSTEMY
+            PPOŻ: SERIA SP
+          </h2>
+          <p class="text-zinc-600 max-w-2xl font-medium" style="font-family: 'Manrope', sans-serif !important;">
+            Wysokogatunkowa stal konstrukcyjna malowana proszkowo.
+            Systemy zaprojektowane z myślą o trwałości i maksymalnej optymalizacji przestrzeni magazynowej.</p>
+        </div>
+        <div class="text-right">
+          <span class="text-6xl font-headline font-black text-zinc-200" style="">01-06</span>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Product Card 1 -->
+        <div
+          class="bg-[#1A1A1A] p-8 rounded-lg shadow-sm hover:shadow-xl transition-all border border-zinc-800 flex flex-col group">
+          <div class="aspect-square mb-8 overflow-hidden rounded-lg bg-white p-4"
+            style="padding: 0; background-color: #FFFFFF; border: none; box-shadow: none; overflow: hidden;">
+            <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+              data-alt="Industrial red metal cabinet for fire safety equipment against a clean white studio background"
+              src="https://lh3.googleusercontent.com/aida/ADBb0ui5YftHOuPfXRmvarGgx1oPboZAL9-VhFtm2yTC6s3qxvYPCO66roeqM-TamEMC49VhTf39D48hlLdUe5UUFkybBJub3oYjsaWuK8P_AWFRbuUq57srIe49p7XscFDyom6D4o-xloJzk7WFVntD3V0h2QE-N-tiooL_iCvdEdVghbQK7670A3bW3pFk91c3S8DpvGrY1PVrNM1jU6n54rUgu1zna4eOAUIqMqHKbHdoVAIxLTMazOFJmPzj5RaWqpnJkoEFyYmlfA"
+              style="">
+          </div>
+          <h3 class="font-headline font-bold text-xl mb-6 text-white tracking-tight" style="">SP-1</h3>
+          <table class="w-full text-[0.75rem] uppercase font-label tracking-widest text-zinc-400 border-collapse">
+            <tbody>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Waga</td>
+                <td class="py-3 text-right text-white font-bold" style="">800 g</td>
+              </tr>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Wymiary</td>
+                <td class="py-3 text-right text-white font-bold" style="">625x325x325 mm</td>
+              </tr>
+              <tr>
+                <td class="py-3" style="">Pakowanie</td>
+                <td class="py-3 text-right text-white font-bold" style="">6 szt.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Product Card 2 -->
+        <div
+          class="bg-[#1A1A1A] p-8 rounded-lg shadow-sm hover:shadow-xl transition-all border border-zinc-800 flex flex-col group">
+          <div class="aspect-square mb-8 overflow-hidden rounded-lg bg-white p-4"
+            style="padding: 0; background-color: #FFFFFF; border: none; box-shadow: none; overflow: hidden;">
+            <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+              data-alt="Matte black industrial shelving unit with minimalist design for emergency supplies"
+              src="https://lh3.googleusercontent.com/aida/ADBb0ui5YftHOuPfXRmvarGgx1oPboZAL9-VhFtm2yTC6s3qxvYPCO66roeqM-TamEMC49VhTf39D48hlLdUe5UUFkybBJub3oYjsaWuK8P_AWFRbuUq57srIe49p7XscFDyom6D4o-xloJzk7WFVntD3V0h2QE-N-tiooL_iCvdEdVghbQK7670A3bW3pFk91c3S8DpvGrY1PVrNM1jU6n54rUgu1zna4eOAUIqMqHKbHdoVAIxLTMazOFJmPzj5RaWqpnJkoEFyYmlfA"
+              style="">
+          </div>
+          <h3 class="font-headline font-bold text-xl mb-6 text-white tracking-tight" style="">SP-2</h3>
+          <table class="w-full text-[0.75rem] uppercase font-label tracking-widest text-zinc-400 border-collapse">
+            <tbody>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Waga</td>
+                <td class="py-3 text-right text-white font-bold" style="">1100 g</td>
+              </tr>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Wymiary</td>
+                <td class="py-3 text-right text-white font-bold" style="">625x340x340 mm</td>
+              </tr>
+              <tr>
+                <td class="py-3" style="">Pakowanie</td>
+                <td class="py-3 text-right text-white font-bold" style="">4 szt.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Product Card 3 -->
+        <div
+          class="bg-[#1A1A1A] p-8 rounded-lg shadow-sm hover:shadow-xl transition-all border border-zinc-800 flex flex-col group">
+          <div class="aspect-square mb-8 overflow-hidden rounded-lg bg-white p-4"
+            style="padding: 0; background-color: #FFFFFF; border: none; box-shadow: none; overflow: hidden;">
+            <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+              data-alt="Modern architectural fire hydrant cover in brushed stainless steel finish"
+              src="https://lh3.googleusercontent.com/aida/ADBb0ui5YftHOuPfXRmvarGgx1oPboZAL9-VhFtm2yTC6s3qxvYPCO66roeqM-TamEMC49VhTf39D48hlLdUe5UUFkybBJub3oYjsaWuK8P_AWFRbuUq57srIe49p7XscFDyom6D4o-xloJzk7WFVntD3V0h2QE-N-tiooL_iCvdEdVghbQK7670A3bW3pFk91c3S8DpvGrY1PVrNM1jU6n54rUgu1zna4eOAUIqMqHKbHdoVAIxLTMazOFJmPzj5RaWqpnJkoEFyYmlfA"
+              style="">
+          </div>
+          <h3 class="font-headline font-bold text-xl mb-6 text-white tracking-tight" style="">SP-1M</h3>
+          <table class="w-full text-[0.75rem] uppercase font-label tracking-widest text-zinc-400 border-collapse">
+            <tbody>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Waga</td>
+                <td class="py-3 text-right text-white font-bold" style="">1500? g</td>
+              </tr>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Wymiary</td>
+                <td class="py-3 text-right text-white font-bold" style=""><span
+                    style="letter-spacing: 1.2px;">2050x325x325 mm</span></td>
+              </tr>
+              <tr>
+                <td class="py-3" style="">Pakowanie</td>
+                <td class="py-3 text-right text-white font-bold" style="">1 szt.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Product Card 4 -->
+        <div
+          class="bg-[#1A1A1A] p-8 rounded-lg shadow-sm hover:shadow-xl transition-all border border-zinc-800 flex flex-col group">
+          <div class="aspect-square mb-8 overflow-hidden rounded-lg bg-white p-4"
+            style="padding: 0; background-color: #FFFFFF; border: none; box-shadow: none; overflow: hidden;">
+            <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+              data-alt="Compact red fire extinguisher box wall-mounted in a modern gallery setting"
+              src="https://lh3.googleusercontent.com/aida/ADBb0ui5YftHOuPfXRmvarGgx1oPboZAL9-VhFtm2yTC6s3qxvYPCO66roeqM-TamEMC49VhTf39D48hlLdUe5UUFkybBJub3oYjsaWuK8P_AWFRbuUq57srIe49p7XscFDyom6D4o-xloJzk7WFVntD3V0h2QE-N-tiooL_iCvdEdVghbQK7670A3bW3pFk91c3S8DpvGrY1PVrNM1jU6n54rUgu1zna4eOAUIqMqHKbHdoVAIxLTMazOFJmPzj5RaWqpnJkoEFyYmlfA"
+              style="">
+          </div>
+          <h3 class="font-headline font-bold text-xl mb-6 text-white tracking-tight" style="">SP-2M</h3>
+          <table class="w-full text-[0.75rem] uppercase font-label tracking-widest text-zinc-400 border-collapse">
+            <tbody>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Waga</td>
+                <td class="py-3 text-right text-white font-bold" style="">1500? g</td>
+              </tr>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Wymiary</td>
+                <td class="py-3 text-right text-white font-bold" style="">2050x340x340 mm</td>
+              </tr>
+              <tr>
+                <td class="py-3" style="">Pakowanie</td>
+                <td class="py-3 text-right text-white font-bold" style="">1 szt.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Product Card 5 -->
+        <div
+          class="bg-[#1A1A1A] p-8 rounded-lg shadow-sm hover:shadow-xl transition-all border border-zinc-800 flex flex-col group">
+          <div class="aspect-square mb-8 overflow-hidden rounded-lg bg-white p-4"
+            style="padding: 0; background-color: #FFFFFF; border: none; box-shadow: none; overflow: hidden;">
+            <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+              data-alt="Industrial metal ventilation cover with high-precision laser-cut pattern"
+              src="https://lh3.googleusercontent.com/aida/ADBb0ui5YftHOuPfXRmvarGgx1oPboZAL9-VhFtm2yTC6s3qxvYPCO66roeqM-TamEMC49VhTf39D48hlLdUe5UUFkybBJub3oYjsaWuK8P_AWFRbuUq57srIe49p7XscFDyom6D4o-xloJzk7WFVntD3V0h2QE-N-tiooL_iCvdEdVghbQK7670A3bW3pFk91c3S8DpvGrY1PVrNM1jU6n54rUgu1zna4eOAUIqMqHKbHdoVAIxLTMazOFJmPzj5RaWqpnJkoEFyYmlfA"
+              style="">
+          </div>
+          <h3 class="font-headline font-bold text-xl mb-6 text-white tracking-tight" style="">SP-1MR</h3>
+          <table class="w-full text-[0.75rem] uppercase font-label tracking-widest text-zinc-400 border-collapse">
+            <tbody>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Waga</td>
+                <td class="py-3 text-right text-white font-bold" style="">1500? g</td>
+              </tr>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Wymiary</td>
+                <td class="py-3 text-right text-white font-bold" style="">1500-2050x325x325 mm</td>
+              </tr>
+              <tr>
+                <td class="py-3" style="">Pakowanie</td>
+                <td class="py-3 text-right text-white font-bold" style="">1 szt.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Product Card 6 -->
+        <div
+          class="bg-[#1A1A1A] p-8 rounded-lg shadow-sm hover:shadow-xl transition-all border border-zinc-800 flex flex-col group">
+          <div class="aspect-square mb-8 overflow-hidden rounded-lg bg-white p-4"
+            style="padding: 0; background-color: #FFFFFF; border: none; box-shadow: none; overflow: hidden;">
+            <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+              data-alt="Detail of a technical control panel for fire safety with industrial switches"
+              src="https://lh3.googleusercontent.com/aida/ADBb0ui5YftHOuPfXRmvarGgx1oPboZAL9-VhFtm2yTC6s3qxvYPCO66roeqM-TamEMC49VhTf39D48hlLdUe5UUFkybBJub3oYjsaWuK8P_AWFRbuUq57srIe49p7XscFDyom6D4o-xloJzk7WFVntD3V0h2QE-N-tiooL_iCvdEdVghbQK7670A3bW3pFk91c3S8DpvGrY1PVrNM1jU6n54rUgu1zna4eOAUIqMqHKbHdoVAIxLTMazOFJmPzj5RaWqpnJkoEFyYmlfA"
+              style="">
+          </div>
+          <h3 class="font-headline font-bold text-xl mb-6 text-white tracking-tight" style="">SP-2MR</h3>
+          <table class="w-full text-[0.75rem] uppercase font-label tracking-widest text-zinc-400 border-collapse">
+            <tbody>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Waga</td>
+                <td class="py-3 text-right text-white font-bold" style="">1500? g</td>
+              </tr>
+              <tr class="border-b border-zinc-800">
+                <td class="py-3" style="">Wymiary</td>
+                <td class="py-3 text-right text-white font-bold" style="">1500-2050x340x340 mm</td>
+              </tr>
+              <tr>
+                <td class="py-3" style="">Pakowanie</td>
+                <td class="py-3 text-right text-white font-bold" style="">1 szt.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Logistics & Custom Orders: Dark Monolith Section -->
+  <section class="relative -mt-12 pt-32 bg-[#111111] z-10 px-12 overflow-hidden"
+    style="border-bottom-left-radius: 60px; border-bottom-right-radius: 60px; padding-bottom: 240px; overflow: hidden;">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-24 items-center">
+      <div>
+        <h2 class="font-headline font-bold text-5xl tracking-normal text-white mb-12"
+          style="font-family: 'Plus Jakarta Sans', sans-serif !important; letter-spacing: 0px !important;">Logistyka bez
+          kompromisów</h2>
+        <div class="space-y-12">
+          <div class="flex gap-8 group">
+            <div
+              class="w-16 h-16 flex-shrink-0 bg-surface-container-high rounded-full flex items-center justify-center text-primary-container border border-white/5 group-hover:bg-primary-container group-hover:text-white transition-colors duration-300">
+              <span class="material-symbols-outlined text-3xl" style="">package_2</span>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-white mb-2" style="">Flat-pack Advantage</h4>
+              <p class="text-zinc-500 leading-relaxed" style="">Optymalizacja przestrzeni: nawet 6 sztuk w jednym
+                kartonie zbiorczym. Redukcja kosztów transportu o 40%.</p>
+            </div>
+          </div>
+          <div class="flex gap-8 group">
+            <div
+              class="w-16 h-16 flex-shrink-0 bg-surface-container-high rounded-full flex items-center justify-center text-primary-container border border-white/5 group-hover:bg-primary-container group-hover:text-white transition-colors duration-300">
+              <span class="material-symbols-outlined text-3xl" style="">palette</span>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-white mb-2" style="">Custom RAL Painting</h4>
+              <p class="text-zinc-500 leading-relaxed" style="">Malowanie na dowolny kolor z palety RAL dla zamówień
+                powyżej 120 jednostek. Personalizacja pod konkretny projekt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="relative bg-surface-container-low p-1 rounded-lg border border-white/5">
+          <img class="rounded-lg object-contain"
+            data-alt="Efficient warehouse storage of industrial products showing the flat-pack packaging and logistical precision"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6pnVYkOr55lulb7HPVPob_SWrBmiAWxzI4tNFkwvJnQYsucMzo_gHDLN9RoHaZRikGln4chModaZU51359mo3jkHi3c-eTEQrGETNwAMeJy8qQtMqaCoylUzl08cZACNcA6AAWdhoDDyhlS6FTbTbL90MkFGm2zDR1FiXcVJj1vEIpTQ-Tq3dMRiXsKuWcuLC43JYKe4BR8XS-T0o2ha0ruKhpA36jaCBA_A6NQiFUkV49GFZnQqprKSwMVT84ClyXjPGmowr1R8"
+            style="">
+          <div class="absolute bottom-10 -left-10 bg-primary-container text-white p-8 rounded-lg max-w-xs">
+            <span class="block text-4xl font-black mb-2 tracking-tighter" style="">NAWET 6x</span>
+            <p class="text-[0.65rem] uppercase font-label tracking-[0.2em] font-bold" style="">Większa wydajność
+              składowania</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Experience Section: The White Overlap -->
+  <section class="relative -mt-16 bg-white rounded-b-[60px] z-20 px-12 pt-32 pb-32 shadow-2xl">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div class="relative">
+        <div class="relative aspect-square rounded-lg">
+          <img
+            alt="Professional welder in a mask, welding steel pipes in a clean, aesthetic, high-end industrial workshop"
+            class="rounded-lg w-full h-full object-contain"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWRiYGjxGN1eiEAPOzlq3K540kgFwD1s5gO_jYzMMaTCGJ5YSmyYvEkrm6zZZnuWpFPezp2Pg8lPbAYbB-nIoH1xvqYKab5hUUjIWm1bBeg2DnLD9GqKpUeS8NYoBxYDfTkiDK8h_GvtFrVFTnPrawufCBNFZW8N4Ifn6lHrjAU4nCcwkov2RQt_edC_tuFAt2iBWiWcZSFBff9V8XFmhwW56ykMsRMKnWH6pW2tTcBnqWOYK6_jCyjFWmkEt6vfdNFfc8lUTuOYM"
+            style="">
+          <div
+            class="absolute bottom-12 -right-12 bg-primary-container text-white p-8 rounded-lg max-w-xs shadow-2xl z-30">
+            <span class="block text-4xl font-black mb-2 tracking-tighter" style="">25 LAT</span>
+            <p class="text-[0.65rem] uppercase font-label tracking-[0.2em] font-bold" style="">Tradycji i jakości</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center">
+        <span class="text-primary-container font-black text-sm uppercase tracking-[0.3em] mb-6 block"
+          style="">Doświadczenie</span>
+        <h2 class="font-headline font-bold text-4xl lg:text-5xl tracking-normal text-zinc-900 mb-8 leading-[1.1]"
+          style="font-family: 'Plus Jakarta Sans', sans-serif !important; letter-spacing: 0px !important;">25 LAT
+          EKSPORTU.<br>100% POLSKA PRODUKCJA.</h2>
+        <p class="text-zinc-600 text-lg leading-relaxed font-medium mb-8"
+          style="font-family: 'Manrope', sans-serif !important;">
+          Od ćwierć wieku dostarczamy systemy PPOŻ na rynek niemiecki. Nasza produkcja to połączenie rzemieślniczej
+          precyzji spawów z nowoczesnym parkiem maszynowym. Wybierając IGNIFORM, stawiasz na certyfikowaną jakość i
+          dekady doświadczenia w obróbce stali.
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="h-[1px] w-12 bg-zinc-300"></div>
+          <span class="text-zinc-400 font-headline font-bold text-xs uppercase tracking-widest" style=""><br></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- B2B Contact: Terminal Style Form -->
+  <section class="relative -mt-12 pt-48 pb-48 bg-surface-container-lowest z-0 px-12">
+    <div class="max-w-4xl mx-auto text-center mb-20">
+      <h2 class="font-headline font-black text-4xl lg:text-5xl tracking-tighter text-white mb-6 uppercase" style="">
+        SKONFIGURUJ SYSTEM PPOŻ DLA SWOJEJ INWESTYCJI</h2>
+      <p class="text-zinc-500" style="">Nasi inżynierowie przygotują ofertę techniczną w ciągu 24h.</p>
+    </div>
+    <div class="max-w-3xl mx-auto bg-surface p-10 rounded-lg shadow-2xl border border-white/5">
+      <form class="space-y-8">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-2">
+            <label class="text-[0.65rem] font-black uppercase tracking-[0.3em] text-zinc-500" style="">Imię i
+              Nazwisko</label>
+            <input
+              class="w-full bg-surface-container-high border-none rounded-sm text-white placeholder:text-zinc-700 font-label text-sm py-4 focus:ring-2 focus:ring-primary-container/50 transition-all"
+              placeholder="JAN KOWALSKI" type="text">
+          </div>
+          <div class="space-y-2">
+            <label class="text-[0.65rem] font-black uppercase tracking-[0.3em] text-zinc-500" style="">Email
+              Służbowy</label>
+            <input
+              class="w-full bg-surface-container-high border-none rounded-sm text-white placeholder:text-zinc-700 font-label text-sm py-4 focus:ring-2 focus:ring-primary-container/50 transition-all"
+              placeholder="JK@COMPANY.PL" type="email">
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label class="text-[0.65rem] font-black uppercase tracking-[0.3em] text-zinc-500" style="">Specyfikacja
+            zamówienia</label>
+          <textarea
+            class="w-full bg-surface-container-high border-none rounded-sm text-white placeholder:text-zinc-700 font-label text-sm py-4 focus:ring-2 focus:ring-primary-container/50 transition-all"
+            placeholder="ILOŚĆ, MODEL, LOKALIZACJA INWESTYCJI..." rows="4"></textarea>
+        </div>
+        <button
+          class="w-full bg-primary-container text-white py-6 rounded-full font-black uppercase tracking-[0.3em] text-xs hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-4"
+          style="">
+          Wyślij zapytanie
+          <span class="material-symbols-outlined" style="">send</span>
+        </button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer Shell -->
+  <footer class="w-full rounded-t-[3rem] mt-[-3rem] bg-zinc-950 dark:bg-black z-50 relative ambient-shadow-lg">
+    <div
+      class="flex flex-col md:flex-row justify-between items-center px-12 md:px-16 py-12 md:py-16 w-full max-w-7xl mx-auto">
+      <div class="flex-1 text-left hidden md:block">
+        <p class="font-['Manrope'] text-[0.65rem] text-zinc-600 uppercase tracking-widest" style="">Polityka Prywatności
+          | Regulamin Współpracy</p>
+      </div>
+      <div class="flex flex-wrap gap-8 md:gap-12 justify-center flex-1">
+        <a class="font-headline font-bold uppercase tracking-widest text-[0.75rem] text-white hover:text-primary transition-colors"
+          href="#" style="">Produkty</a>
+        <a class="font-headline font-bold uppercase tracking-widest text-[0.75rem] text-white hover:text-primary transition-colors"
+          href="#" style="">O Nas</a>
+        <a class="font-headline font-bold uppercase tracking-widest text-[0.75rem] text-white hover:text-primary transition-colors"
+          href="#" style="">Kontakt</a>
+      </div>
+      <div class="flex-1 text-right hidden md:block">
+        <span class="text-white font-black text-xl tracking-tighter font-headline" style="">IGNIFORM</span>
+      </div>
+      <!-- Mobile view adjustments for GDPR links -->
+      <div class="md:hidden mt-8 text-center w-full">
+        <p class="font-['Manrope'] text-[0.6rem] text-zinc-600 uppercase tracking-widest" style="">Polityka Prywatności
+          | Regulamin Współpracy</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
