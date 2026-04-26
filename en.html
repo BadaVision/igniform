@@ -437,17 +437,17 @@
                     <input type="hidden" name="redirect" value="https://igniform.eu/success.html">
                     <div class="form-grid">
                         <div class="form-group">
-                            <label class="form-label">Full Name</label>
-                            <input type="text" name="name" required class="form-control" placeholder="JOHN SMITH">
+                            <label class="form-label" for="contact-name">Full Name</label>
+                            <input id="contact-name" type="text" name="name" required class="form-control" placeholder="JOHN SMITH">
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Corporate Email</label>
-                            <input type="email" name="email" required class="form-control" placeholder="JS@COMPANY.COM">
+                            <label class="form-label" for="contact-email">Corporate Email</label>
+                            <input id="contact-email" type="email" name="email" required class="form-control" placeholder="JS@COMPANY.COM">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Order Specification</label>
-                        <textarea name="message" required class="form-control" placeholder="QUANTITY, MODEL, PROJECT LOCATION..."></textarea>
+                        <label class="form-label" for="contact-message">Order Specification</label>
+                        <textarea id="contact-message" name="message" required class="form-control" placeholder="QUANTITY, MODEL, PROJECT LOCATION..."></textarea>
                     </div>
                     <div class="form-gdpr">
                         <label class="form-gdpr-label">
@@ -503,10 +503,10 @@
     <!-- Lightbox Modal -->
     <div id="lightbox-modal" class="lightbox-modal hidden">
         <div class="lightbox-overlay"></div>
-        <button class="lightbox-prev">&lsaquo;</button>
-        <button class="lightbox-next">&rsaquo;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&lsaquo;</button>
+        <button class="lightbox-next" aria-label="Next image">&rsaquo;</button>
         <div class="lightbox-content">
-            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-close" aria-label="Close gallery">&times;</button>
             <div class="lightbox-slider">
                 <img src="" alt="Gallery Image" class="lightbox-main-img">
             </div>
